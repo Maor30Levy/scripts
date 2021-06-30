@@ -2,7 +2,7 @@
 APP_NAME=$1
 IP=$2
 sudo yum install git -y
-sudo amazon-linux-extras install nginx1
+sudo amazon-linux-extras install nginx1 -y
 git clone https://github.com/Maor30Levy/$APP_NAME.git
 sudo mv ./$APP_NAME/client/build /usr/share/nginx/$APP_NAME
 sudo rm -rf /usr/share/nginx/html
